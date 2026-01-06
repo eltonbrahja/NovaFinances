@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Finance - Elton Brahja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist:wght@100;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              geist: ['Geist', 'sans-serif'],
+            },
+            colors: {
+              'soft-bg': '#F1F5F9',
+              'card-bg': '#F8FAFC', 
+            },
+            boxShadow: {
+              'premium': '0 20px 50px -12px rgba(0, 0, 0, 0.08)',
+              'premium-hover': '0 30px 60px -12px rgba(0, 0, 0, 0.12)',
+              'deep': '0 40px 100px -20px rgba(0, 0, 0, 0.15)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .font-geist {
+        font-family: 'Geist', sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 20px;
+        border: 2px solid #F1F5F9;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border: 2px solid #020617;
+      }
+      .ease-spring {
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      html { background-color: #F1F5F9; }
+      html.dark { background-color: #020617; }
+    </style>
+    </head>
+  <body class="bg-soft-bg dark:bg-[#020617] text-[#1E293B] dark:text-slate-100 selection:bg-indigo-100 dark:selection:bg-indigo-900/40">
+    <div id="root"></div>
+
+    <script type="module" src="/src/index.tsx"></script>
+    
+  </body>
+</html>

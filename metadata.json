@@ -1,0 +1,7 @@
+{
+  "name": "Nova Finance - Minimalist Wealth Management",
+  "description": "A high-end, Apple-inspired finance tracker designed for both personal simplicity and business intelligence, featuring AI-driven insights via Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
